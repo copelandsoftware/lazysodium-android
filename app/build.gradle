@@ -162,9 +162,9 @@ Signature.metaClass.getToSignArtifact = { ->
 
 // Tasks
 signing {
-    // This will use the GPG Agent
-    // to sign the jar
-    useGpgCmd()
+    setRequired {
+        gradle.taskGraph.allTasks.any { it.equals( PublishToMavenRepository) }
+    }
     sign publishing.publications
 }
 
