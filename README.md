@@ -45,6 +45,20 @@ Substitute `VERSION_NUMBER` for the version in this box:
 
 ![Maven Central](https://img.shields.io/maven-central/v/com.goterl/lazysodium-android?color=%23fff&label=Maven%20Central)
 
+## How the artifacts were built
+
+The [jniLibs](https://github.com/emersonsoftware/lazysodium-android/tree/master/app/src/main/jniLibs) directory contains `.so` library files built 
+with [libsodium](https://github.com/jedisct1/libsodium)'s Android release scripts located in 
+[dist-build](https://github.com/jedisct1/libsodium/tree/master/dist-build) using their stable branch as of April 6, 2022, 
+SHA `7389bf7f2968be75520e932704f18f038c29e581`.  Xcode 13.3 was used as well as Android NDK LTS `23.1.7779620` (r23b).  
+SHA256 hashes are as follows
+
+- `11298e04191ade55eca27211728fb160e8239d5f62548fa32e28a458d3d8dfe0`  `arm64-v8a/libsodium.so`
+- `19463703a2f2989e173aea03e51bae4684f52a1fac18ff0e24c9baa3d3081e43`  `armeabi-v7a/libsodium.so`
+- `21f1454f4b57c273943f01879c7e7c8f8a990eb888ede8aa3f8742296f5ad29d`  `x86/libsodium.so`
+- `ab55a59c34604cbea9ccfbfe407a3cecfa9b66bf6795f8a1ddc691a8b3a7daf0`  `x86_64/libsodium.so`
+
+
 ## Documentation
 
 See our [official documentation](https://github.com/terl/lazysodium-java/wiki) to get started.
