@@ -50,13 +50,13 @@ Substitute `VERSION_NUMBER` for the version in this box:
 The [jniLibs](https://github.com/emersonsoftware/lazysodium-android/tree/master/app/src/main/jniLibs) directory contains `.so` library files built 
 with [libsodium](https://github.com/jedisct1/libsodium)'s Android release scripts located in 
 [dist-build](https://github.com/jedisct1/libsodium/tree/master/dist-build) using their stable branch as of April 6, 2022, 
-SHA `7389bf7f2968be75520e932704f18f038c29e581`.  Xcode 13.3 was used as well as Android NDK LTS `23.1.7779620` (r23b).  
+SHA `7389bf7f2968be75520e932704f18f038c29e581`.  Android NDK LTS `23.2.8568313` (r23c) was used with platform target of API 26.
 SHA256 hashes are as follows
 
-- `11298e04191ade55eca27211728fb160e8239d5f62548fa32e28a458d3d8dfe0`  `arm64-v8a/libsodium.so`
-- `19463703a2f2989e173aea03e51bae4684f52a1fac18ff0e24c9baa3d3081e43`  `armeabi-v7a/libsodium.so`
-- `21f1454f4b57c273943f01879c7e7c8f8a990eb888ede8aa3f8742296f5ad29d`  `x86/libsodium.so`
-- `ab55a59c34604cbea9ccfbfe407a3cecfa9b66bf6795f8a1ddc691a8b3a7daf0`  `x86_64/libsodium.so`
+- `9c267f0ceb058ff7a2498098f5b0ba5d90e5a4573b564439d315fa58e7034366`  `arm64-v8a/libsodium.so`
+- `6743b34ce1dccdae3c03975645ca9b8330c6153dbefac1a3e08d4f52d836c49c`  `armeabi-v7a/libsodium.so`
+- `ec34b33c1d7bd18be885b30752f637da6353d3453fe183744449ea08e3af6607`  `x86/libsodium.so`
+- `d83142a2da16f487d821bb65e7e5971c3e82c2bfc50ad2978ada2cfadfc1a0bf`  `x86_64/libsodium.so`
 
 
 ## Documentation
