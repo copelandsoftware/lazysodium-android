@@ -1,5 +1,22 @@
 <p align="center"><img width="260" src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/lazysodium_large_transparent.png" /></p>
   
+# Copeland Edit ------------
+## How the artifacts were built
+
+The [jniLibs](https://github.com/emersonsoftware/lazysodium-android/tree/master/app/src/main/jniLibs) directory contains `.so` library files 
+built with [libsodium](https://github.com/jedisct1/libsodium)'s Android release scripts 
+located in [dist-build](https://github.com/jedisct1/libsodium/blob/master/dist-build/android-aar.sh) using their stable branch as of January 6 2025.
+Used the minimal versions of the `.so` files:
+SHA `6125c373c8c98c60b706f10cea5e610e443a177e`.  Android NDK LTS `27.2.12479018` (r27c) was used with platform target of API 26.
+SHA256 hashes are as follows
+
+- `dd37563350acc5ac8953c1ada02a49cd0715c1daa5b0c23024b8d37daa25f70b`  `arm64-v8a/libsodium.so`
+- `cd33e89ce5b9493b82ab986a6fd92a1dc9302a8effd367bcd91c7144bafed9a9`  `armeabi-v7a/libsodium.so`
+- `8474b8eed1d49cc10d34a2912855790c504a0928c365da14f7277ba6e95bb567`  `x86/libsodium.so`
+- `27bf74289fc882d836951a384704f7e9f0337228a8e1e619bc73ff94385979ac`  `x86_64/libsodium.so`
+
+# Original -----------------
+
 # Lazysodium Android
   
 Lazysodium is a **complete** Android implementation of the [Libsodium](https://github.com/jedisct1/libsodium) library that provides developers with a **smooth and effortless** cryptography experience. 
@@ -44,20 +61,6 @@ dependencies {
 Substitute `VERSION_NUMBER` for the version in this box:
 
 ![Maven Central](https://img.shields.io/maven-central/v/com.goterl/lazysodium-android?color=%23fff&label=Maven%20Central)
-
-## How the artifacts were built
-
-The [jniLibs](https://github.com/emersonsoftware/lazysodium-android/tree/master/app/src/main/jniLibs) directory contains `.so` library files built 
-with [libsodium](https://github.com/jedisct1/libsodium)'s Android release scripts located in 
-[dist-build](https://github.com/jedisct1/libsodium/tree/master/dist-build) using their stable branch as of April 6, 2022, 
-SHA `7389bf7f2968be75520e932704f18f038c29e581`.  Android NDK LTS `23.2.8568313` (r23c) was used with platform target of API 26.
-SHA256 hashes are as follows
-
-- `9c267f0ceb058ff7a2498098f5b0ba5d90e5a4573b564439d315fa58e7034366`  `arm64-v8a/libsodium.so`
-- `6743b34ce1dccdae3c03975645ca9b8330c6153dbefac1a3e08d4f52d836c49c`  `armeabi-v7a/libsodium.so`
-- `ec34b33c1d7bd18be885b30752f637da6353d3453fe183744449ea08e3af6607`  `x86/libsodium.so`
-- `d83142a2da16f487d821bb65e7e5971c3e82c2bfc50ad2978ada2cfadfc1a0bf`  `x86_64/libsodium.so`
-
 
 ## Documentation
 
