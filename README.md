@@ -1,5 +1,19 @@
 <p align="center"><img width="260" src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/lazysodium_large_transparent.png" /></p>
   
+# EDIT: OCT 22 2025 - COMPILED NEW .SO FILES ON NDK 29
+## How the artifacts were built
+
+The [jniLibs](https://github.com/emersonsoftware/lazysodium-android/tree/master/app/src/main/jniLibs) directory contains `.so` library files built
+with [libsodium](https://github.com/copelandsoftware/libsodium)'s Android release scripts located in
+[dist-build](https://github.com/copelandsoftware/libsodium/tree/stable/dist-build) using their stable branch as of October 22rd 2025,
+SHA `0b1d032e31c68a4230010b82a44592f7345a6d27`.  Android NDK LTS `29.0.14206865` (r29) was used with platform target of API 29.
+SHA256 hashes are as follows
+
+- `c256f4994699e8f1804959122217ee0361c79d1a8271ce46f1f3a841ef22ec2c`  `arm64-v8a/libsodium.so`
+- `66018fa617b284e2c1410a6ba2037fe4d64a6f5b5cb03f498793c4620331abbc`  `armeabi-v7a/libsodium.so`
+- `d3a482cfd19a8dc55023a149063cbec2bb62a4693bd8db012ab2a1b698562d89`  `x86/libsodium.so`
+- `a20feaee31bb66e575aca58275190a47da04eb63a2d07e729447855fd94d950f`  `x86_64/libsodium.so`
+
 # Lazysodium Android
   
 Lazysodium is a **complete** Android implementation of the [Libsodium](https://github.com/jedisct1/libsodium) library that provides developers with a **smooth and effortless** cryptography experience. 
